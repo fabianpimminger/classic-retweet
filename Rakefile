@@ -54,7 +54,7 @@ task :build_safari => :prep do
   cp_r SAFARI, BUILD_DIR
   cp CLASSIC_RETWEET_SCRIPT, SAFARI_BUILD_DIR
   cp Dir.glob("icon-*.png"), SAFARI_BUILD_DIR
-  sh "cd #{SAFARI_BUILD_DIR}; zip -r #{SAFARI_EXTENSION} * -x #{ZIP_EXCLUDE}"
+  #sh "cd #{SAFARI_BUILD_DIR}; zip -r #{SAFARI_EXTENSION} * -x #{ZIP_EXCLUDE}"
 end
 
 task :default do
